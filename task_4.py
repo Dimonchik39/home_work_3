@@ -23,11 +23,10 @@ def give_int(input_number:  str,
         except ValueError:
             print('Вы ввели не число. Введите число.')
 
-def trans_num(int_num):
+def trans_num(dec_num):
     '''
     Функция преобразования десятичного числа в двоичное
     '''
-    dec_num = int_num
     bin_num = ''
     while dec_num != 0:
         bin_num = str (dec_num % 2) + bin_num
